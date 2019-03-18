@@ -1,0 +1,20 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~ Fonts ~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+	/* ~~~~~~~~~~ Museo Slab ~~~~~~~~~~ */
+
+	@mixin primary-font($fontWeight) {
+	    @if $fontWeight == 100 {
+	        font-weight: 100;
+	    } @elseif $fontWeight == 300 {
+	        font-weight: 300;
+	    } @elseif $fontWeight == 500 {
+	        font-weight: 500;
+	    }
+	    @elseif $fontWeight == 900 {
+	        font-weight: 900;
+	    }
+	    font-family: 'museo-slab', sans-serif;
+	    font-style: normal;
+	}

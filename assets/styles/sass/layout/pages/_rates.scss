@@ -1,0 +1,84 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~ Rates - Template ~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.rates-template-page {
+	.rate {
+		margin-top: 20px;
+		margin-bottom: 20px;
+
+		&--first {
+			margin-top: ($element-space__xs * 0.5);
+
+			@include media-breakpoint-up(sm) {
+			    margin-top: ($element-space__sm * 0.5);
+			}
+
+			@include media-breakpoint-up(md) {
+			    margin-top: ($element-space__md * 0.5);
+			}
+
+			@include media-breakpoint-up(lg) {
+			    margin-top: ($element-space__lg * 0.5);
+			}
+
+			@include media-breakpoint-up(xl) {
+			    margin-top: ($element-space__xl * 0.5);
+			}
+
+			.rate__title {
+				border-top-color: transparent;
+				padding-top: 0;
+			}
+
+			.rate__content {
+				border-top-color: transparent;
+
+				@include media-breakpoint-up(md) {
+					padding-top: 0;
+				}
+			}
+		}
+
+		&__title {
+			@include primary-font(500);
+			@extend p;
+			color: $primary-color;
+			padding-top: 20px;
+			border-top: 1px dotted $primary-color;
+
+			@include media-breakpoint-up(md) {
+				border-top-color: transparent;
+				margin-top: 0;
+			}
+
+			b {
+				@include primary-font(900);
+			}
+		}
+
+		&__content {
+			padding-top: 15px;
+
+			ul {
+				list-style-type: none;
+				margin: 0;
+
+				li {
+					&:first-child {
+						margin-top: 0;
+					}
+				}
+			}
+
+			@include media-breakpoint-up(md) {
+				border-top: 1px dotted $primary-color;
+				padding-top: 17.5px;
+			}
+
+			@include media-breakpoint-up(md) {
+				padding-top: 20px;
+			}
+		}
+	}
+}

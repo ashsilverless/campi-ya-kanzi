@@ -1,0 +1,134 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~ Live Cam - Template ~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.live-cam-template-page {
+	.recent-capture {
+		> .container-fluid {
+			padding: 0;
+		}
+
+		.single-recent {
+			&__image-link {
+				display: block;
+				width: 100%;
+				height: 200px;
+				position: relative;
+
+				@include media-breakpoint-up(sm) {
+					height: 220px;
+				}
+
+				@include media-breakpoint-up(md) {
+					height: 250px;
+				}
+
+				@include media-breakpoint-up(lg) {
+					height: 280px;
+				}
+
+				@include media-breakpoint-up(xl) {
+					height: 320px;
+				}
+
+				&:after {
+					@extend %single-transition;
+					content: '';
+					display: block;
+					position: absolute;
+					bottom: 30px;
+					right: 30px;
+					width: 30px;
+					height: 30px;
+					background: url('../images/icon__arrows.svg');
+				}
+
+				&:hover {
+					&:after {
+						transform: scale(1.2);
+					}
+				}
+			}
+
+
+			&__title {
+				@include fluid-type(16px, 18px);
+				text-transform: uppercase;
+				width: 380px;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				max-width: calc(100% - 30px);
+			}
+
+			&__description {
+				@include fluid-type(14px, 15px, 1.5);
+				width: 380px;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				max-width: calc(100% - 30px);
+			}
+		}
+	}
+
+	.gallery-section {
+
+		&__title {
+			@include fluid-type(16px, 18px);
+			text-transform: uppercase;
+			color: $primary-color;
+		}
+
+		&__wrapper {
+			margin-left: -10px;
+			margin-right: -10px;
+			width: calc(100% + 15px);
+
+			&__thumbnail-link {
+				height: 100px;
+				display: block;
+				float: left;
+				width: calc(50% - 20px);
+				margin: 25px 10px 0px 10px;
+
+				@include media-breakpoint-up(sm) {
+					width: calc(33% - 20px);
+					height: 120px;
+				}
+
+				@include media-breakpoint-up(md) {
+					width: calc(25% - 20px);
+					height: 140px;
+				}
+
+				@include media-breakpoint-up(lg) {
+					width: calc(20% - 20px);
+				}
+
+				@include media-breakpoint-up(xl) {
+					width: calc(14.28% - 20px);
+				}
+
+				&__image {
+					@extend %single-transition;
+					height: 100%;
+					border: 1px solid transparent;
+				}
+
+				&:hover {
+					.gallery-section__wrapper__thumbnail-link__image {
+						border-color: $primary-color;
+					}
+				}
+
+				&__time {
+					@include primary-font(500);
+					display: block;
+					font-size: 12px;
+					padding: 2.5px;
+				}
+			}
+		}
+	}
+}

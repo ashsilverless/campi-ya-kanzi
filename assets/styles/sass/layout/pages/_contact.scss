@@ -1,0 +1,116 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~ Contact - Template Page ~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.contact-template-page {
+	.contact-details {
+		&__wrapper {
+			margin-top: ($element-space__xs * 0.5);
+
+			@include media-breakpoint-up(sm) {
+			    margin-top: ($element-space__sm * 0.5);
+			}
+
+			@include media-breakpoint-up(md) {
+			    margin-top: ($element-space__md * 0.5);
+			    float: right;
+			}
+
+			@include media-breakpoint-up(lg) {
+			    margin-top: ($element-space__lg * 0.5);
+			}
+
+			@include media-breakpoint-up(xl) {
+			    margin-top: ($element-space__xl * 0.5);
+			}
+
+			&__address-name {
+				@include primary-font(300);
+				color: $primary-color;
+			}
+
+			&__phone-number,
+			&__bookings-address,
+			&__director-address-email {
+				@include fluid-type(13px, 14px, 1.5);
+
+				&__number,
+				&__email {
+					@include primary-font(300);
+					@include fluid-type(15px, 16px, 1.5);
+
+					&:hover,
+					&:focus {
+						color: $primary-color;
+					}
+				}
+			}
+		}
+
+		&__content {
+			margin-top: ($element-space__xs * 0.5);
+
+			@include media-breakpoint-up(sm) {
+			    margin-top: ($element-space__sm * 0.5);
+			}
+
+			@include media-breakpoint-up(md) {
+			    margin-top: ($element-space__md * 0.5);
+			}
+
+			@include media-breakpoint-up(lg) {
+			    margin-top: ($element-space__lg * 0.5);
+			}
+
+			@include media-breakpoint-up(xl) {
+			    margin-top: ($element-space__xl * 0.5);
+			}
+		}
+
+		#gform_wrapper_1 {
+			margin-top: ($element-space__xs * 0.5);
+			padding-bottom: ($element-space__xs * 0.75);
+
+			@include media-breakpoint-up(sm) {
+				margin-top: ($element-space__sm * 0.5);
+			    padding-bottom: ($element-space__sm * 0.75);
+			}
+
+			@include media-breakpoint-up(md) {
+				margin-top: ($element-space__md * 0.5);
+			    padding-bottom: ($element-space__md * 0.75);
+			}
+
+			@include media-breakpoint-up(lg) {
+				margin-top: ($element-space__lg * 0.5);
+			    padding-bottom: ($element-space__lg * 0.75);
+			}
+
+			@include media-breakpoint-up(xl) {
+				margin-top: ($element-space__xl * 0.5);
+			    padding-bottom: ($element-space__xl * 0.75);
+			}
+		}
+
+		#gform_wrapper_2 {
+			border-top: 1px dotted $primary-color;
+			padding-top: ($element-space__xs * 0.75);
+
+			@include media-breakpoint-up(sm) {
+			    padding-top: ($element-space__sm * 0.75);
+			}
+
+			@include media-breakpoint-up(md) {
+			    padding-top: ($element-space__md * 0.75);
+			}
+
+			@include media-breakpoint-up(lg) {
+			    padding-top: ($element-space__lg * 0.75);
+			}
+
+			@include media-breakpoint-up(xl) {
+			    padding-top: ($element-space__xl * 0.75);
+			}
+		}
+	}
+}

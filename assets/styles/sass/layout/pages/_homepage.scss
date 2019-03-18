@@ -1,0 +1,190 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~ Homepage - Template ~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.homepage-template {
+    .link-boxes {
+        width: 100%;
+
+        &__single-link {
+            flex-basis: 100%;
+
+            @include media-breakpoint-up(sm) {
+                flex-basis: 33.3%;
+                max-width: 33.33%;
+            }
+
+            &__label {
+                @include media-breakpoint-up(sm) {
+                    flex-basis: 100%;
+                    text-align: center;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    flex-basis: auto;
+                    display: inline-block;
+                }
+            }
+
+            &__arrow {
+                @include media-breakpoint-up(sm) {
+                    margin-left: 0;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+	.introduction {
+        &__quotation-wrapper {
+            height: 100%;
+
+            @include media-breakpoint-up(md) {
+                float: right;
+            }
+
+            &__quotation {
+                color: $primary-color;
+                position: relative;
+                padding-left: 40px;
+
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    width: 30px;
+                    height: 25px;
+                    background-image: url('../images/icon__quotation.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    left: 0;
+                    top: -10px;
+                    opacity: .4;
+
+                    @include media-breakpoint-up(sm) {
+                        width: 40px;
+                        height: 30px;
+                    }
+
+                    @include media-breakpoint-up(md) {
+                        left: -20px;
+                        width: 50px;
+                        height: 40px;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        left: -40px;
+                    }
+                }
+
+                @include media-breakpoint-up(sm) {
+                    padding-left: 50px;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    max-width: 370px;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    padding-left: 0;
+                }
+
+                &__content {
+                    @include fluid-type(18px, 22px, 1.45);
+                }
+
+                &__cite {
+                    @include fluid-type(14px, 15px);
+                    @include primary-font(900);
+                }
+            }
+        }
+    }
+
+    .where-we-are {
+        padding-bottom: ($element-space__xs * 1.5);
+
+        @include media-breakpoint-up(sm) {
+            padding-bottom: ($element-space__sm * 1.5);
+        }
+
+        @include media-breakpoint-up(md) {
+            padding-bottom: ($element-space__md * 1.5);
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding-bottom: ($element-space__lg * 1.5);
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding-bottom: ($element-space__xl * 1.5);
+        }
+
+        &__title-wrapper {
+            border-top: 1px dotted $primary-color;
+            padding-top: ($element-space__xs * 0.75);
+
+            @include media-breakpoint-up(sm) {
+                padding-top: ($element-space__sm * 0.75);
+            }
+
+            @include media-breakpoint-up(md) {
+                padding-top: ($element-space__md * 0.75);
+            }
+
+            @include media-breakpoint-up(lg) {
+                padding-top: ($element-space__lg * 0.75);
+            }
+
+            @include media-breakpoint-up(xl) {
+                padding-top: ($element-space__xl * 0.75);
+            }
+        }
+
+        &__content-wrapper {
+            &__link {
+                @include media-breakpoint-up(md) {
+                    float: right;
+                }
+            }
+
+            &__address {
+                margin-top: 20px;
+
+                @include media-breakpoint-up(sm) {
+                    margin-top: 25px;
+                }
+
+                @include media-breakpoint-up(md) {
+                    margin-top: 30px;
+                }
+
+                &__name {
+                    @include primary-font(500);
+                }
+
+                &__list {
+                    margin-top: 5px;
+
+                    &__item {
+                        line-height: 1;
+                        padding-right: 5px;
+                        border-right: 1px solid #fff;
+
+                        &:last-child {
+                            padding: 0;
+                            border: none;
+                        }
+
+                        &__value {
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

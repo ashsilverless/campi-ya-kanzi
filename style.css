@@ -1,0 +1,470 @@
+/*
+    Theme Name: Cmapi ya Kanzi
+    Author: WP Team
+    Author URI: http://wpteam.com;
+    Description: Cmapi ya Kanzi Wordpress Theme 2017
+    Version: 1.0
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*questionnaire css*/
+
+.gform_wrapper form .gform_body .gform_fields .gfield label .gfield_required, .gform_wrapper form .gform_body .gform_fields .gfield label:not([for=choice_1_3_1]) {
+    display: block !important;
+}
+
+body .gform_wrapper form .gform_body .gform_fields .gfield .ginput_container {
+    margin-top: 5px !important;
+} 
+
+body.page-template-questionnaire .parallax-mirror,
+body.page-template-questionnaire .footer-cta {
+	display: none;
+}
+
+body.page-template-questionnaire .gform_wrapper form .gform_body {
+	width: 100%;
+}
+
+body.page-template-questionnaire .footer-wrapper {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #383332;
+}
+
+body.page-template-questionnaire #main {
+	padding-bottom: 80px;
+	padding-top: 120px;
+}
+
+
+li.sl-left {
+	position: absolute;
+	width: 40%;
+}
+
+li.sl-right {
+    padding-left: 50% !important;
+    width: 100%;
+    margin-top: 15px !important;
+}
+
+li.sl-right.new-guest {
+	margin: 3em 0 !important;
+}
+
+li.sl-right.new-guest > label {
+	margin: 1em 0;
+	}
+	
+.gform_wrapper form .gform_body .gform_fields .gfield.new-guest .ginput_container_checkbox .gfield_checkbox li > label {
+	color: transparent;
+}
+
+.gform_wrapper .gfield_date_dropdown_day, .gform_wrapper .gfield_date_dropdown_month, .gform_wrapper .gfield_date_dropdown_year {
+    width: auto !important;
+}
+
+.gform_wrapper form .gform_body .gform_fields .gfield.weight-input {
+    width: 70%;
+    display: inline-block;	
+    vertical-align: top;
+}
+
+.gform_wrapper form .gform_body .gform_fields .gfield.weight-units .gfield_radio li {
+    display: inline-block;
+    width: auto:
+    }
+
+.gform_wrapper form .gform_body .gform_fields .gfield.weight-units. input[type=radio] {
+	width:auto !important;
+}
+
+.gform_wrapper ul.gfield_radio li {
+    margin-right: 20px;
+}
+
+.gform_wrapper form .gform_body .gform_fields .gfield.weight-units {
+    width: 20%;
+    padding-left: 0 !important;
+    display: inline-block;
+    margin-left: 30px !important;
+}
+
+
+li.sl-right .ginput_container {
+	width: 100%;
+}
+
+.gform_wrapper form .gform_body .gform_fields .gfield.repeat-index {
+	margin-top:30px !important;
+}
+
+span.gf_repeater_add {
+    background: #aa5d18;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+body .gform_wrapper .gform_page_footer {
+    border-top: 1px solid #aa5c18;
+    text-align: right;
+}
+
+body .gform_next_button.button,
+body .gform_previous_button.button,
+body .gform_button.button {
+	display: inline-block;
+    text-transform: uppercase;
+    border: 0;
+    padding: 10px 20px;
+    margin-right: 0;
+}
+
+body .gform_next_button.button {
+	background:white;
+}
+
+body .gform_previous_button.button {
+	background: none;
+	color: white;
+}
+
+body .gform_wrapper .gf_progressbar {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+body .gform_wrapper .percentbar_blue {
+    color: #292929;
+    text-shadow: none;
+    background: none;
+    background: #badcfb;
+    background-color: #badcfb;
+}
+
+
+.sl-checks .gfield_checkbox li {
+	margin:2em !important;
+}
+
+.sl-checks .gfield_checkbox li label {
+	white-space: normal !important;
+}
+
+.gsection {
+	margin-bottom: 2em !important;
+}
+
+.sl-remove {
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 1em !important;	
+}
+
+p.sl-guest {
+	margin:1em 0;
+}
+
+p.sl-guest a{
+	font-weight: 600;
+	}
+
+.sl-carbon {
+	width:60%;
+}
+
+
+li#field_1_6 {
+	margin-top: 2em;
+}
+
+@media (max-width:800px) {
+	
+body.page-template-questionnaire #main {
+	padding-bottom: 140px;
+}	
+	
+}
+
+@media (max-width:610px) {
+
+body.page-template-questionnaire .footer-wrapper {
+    position: relative;
+}
+
+body.page-template-questionnaire #main {
+	padding-bottom: 0;
+}
+	
+li.sl-left {
+	position: relative;
+	width: 100%;
+}
+
+li.sl-right {
+    padding-left: 0 !important;
+    width: 100%;
+    margin-top: 15px !important;
+}
+
+.gform_wrapper .ginput_container span:not(.ginput_price) {
+    display: inline-block !important;
+}
+
+body .gform_wrapper form .gform_body .gform_fields .gfield .ginput_container_checkbox .gfield_checkbox>li label:after {
+    top: 0;
+}
+
+body .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=image]):not([type=file]) {
+    width: auto;
+}
+	
+}
+
+
+@media only screen 
+  and (max-device-width: 667px) 
+  and (orientation: landscape) { 
+
+body.page-template-questionnaire .footer-wrapper {
+    position: relative;
+}
+
+}
+
+
+/*availability page css*/
+.sheet-data{width:100%;}
+
+* .booked {
+color: red !important;
+background: url('images/red-dots.png');
+background-repeat: no-repeat; 
+background-position: center !important;
+color: transparent !important;
+text-indent:-9999px !important;
+} 
+* .available{ 
+color: green !important; 
+background: url('images/green-dots.png');
+background-repeat: no-repeat;
+background-position: center !important;
+color: transparent !important;
+text-indent:-9999px !important; 
+}
+.sheet-data tr:nth-child(1){
+border-bottom:1px solid #aa5e16;
+}
+.sheet-data tr td {
+    text-align: center;
+	border-right:1px dotted #aa5e16;
+	padding:5px; min-width: 30px;
+}
+.sheet-data tr td:last-child{
+  border:none;
+}
+.rates-wpdatatables {
+width: 100%; 
+} 
+.rates-wpdatatables ul {
+list-style: none; width:21%;padding-left:90px;
+float:left;
+} 
+.rates-wpdatatables ul li {
+color:#fff; 
+font-weight:500;
+} 
+.rates-wpdatatables h2 {
+margin-top: 17px;
+width: 68%; 
+float: left;
+margin-top: 10px; 
+text-align: center; 
+margin-bottom: 18px;
+color:#fff;
+} 
+.loadmore {
+vertical-align: middle;
+width: 100%;
+text-align: center;
+display: inline-block; 
+text-transform: uppercase;
+font-weight: bold; 
+} 
+.wpdt-c .wpDataTablesWrapper table.wpDataTable thead th{
+border: none !important; 
+border-bottom: 1px solid !important;
+border-color: #aa5e16 !important; 
+} 
+.wpdt-c .wpDataTablesWrapper table.wpDataTable thead th {
+border-left: 1px dotted !important;
+border-color: #aa5e16 !important; 
+} 
+.wpdt-c .wpDataTablesWrapper table.wpDataTable thead th:first-child {
+border-left:none !important;
+} 
+.loadmore { 
+width: 100%; 
+text-align: center;
+display: inline-block;
+text-transform: uppercase; 
+font-weight: bold;
+} 
+.wpdt-c .wpDataTablesWrapper table.wpDataTable thead th{ 
+border: none !important;
+border-bottom: 1px solid !important;
+border-color: #aa5e16 !important; 
+}
+.wpdt-c .wpDataTablesWrapper table.wpDataTable thead th {
+border-left: 1px dotted !important;
+border-color: #aa5e16 !important;
+}
+.wpdt-c .wpDataTablesWrapper table.wpDataTable thead th:first-child { 
+border-left:none !important;
+} .wpDataTablesWrapper table.wpDataTable > tbody > tr > td { 
+border:none!important; 
+border-left: 1px dotted !important; 
+border-color: #aa5e16 !important;
+}
+.wpDataTablesWrapper table.wpDataTable > tbody > tr > td:first-child {
+border-left:none!important;
+} .rates-wpdatatables {
+margin-top: 100px;
+} 
+.wpdatatable{
+display:none;
+width:100%;
+margin-top:30px;
+margin-bottom: 50px;
+} 
+.wpdatatable.display {
+display: inline-block; overflow: auto;
+} 
+.loadmore .arrow {
+width: 44px;height: 32px; top: calc(50% - 16px); vertical-align: middle;margin-left:10px; 
+}
+.loadmore .cls-1 {
+fill: #fff;
+}
+
+
+.sheet-data tr td:first-child {
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.contact-details__title{ padding-left:160px;}
+
+.post-password-form p {
+    margin-bottom: 10px;
+}
+#pwbox-1237 {
+    height: 35px;
+    display: inline-block;
+    width: 300px;
+}
+.post-password-form{font-weight:bolder;}
+.post-password-form [type="submit"] { position: relative;}
+.post-password-form .post-password-submit {
+	background-color: #aa5e16;
+	color: #fff;
+	font-weight: 500;
+	font-family: 'museo-slab',sans-serif;
+	font-style: normal;
+	padding: 0px 10px;
+	margin-top: 0;
+	border: 0;
+	width: 10%;
+	text-align: left;
+	background: url(images/icon__arrow--white.svg) no-repeat 90% center;
+	height: 35px; display:
+	inline-block;
+	margin: 0 10px;
+}
+.post-password-form .post-password-submit:hover {background-color: #fff;
+color: #373331;}
+.post-password-form [type="submit"] {
+background-color: #aa5e16;
+color: #fff; font-weight: 500;
+font-family: 'museo-slab',sans-serif;
+font-style: normal;
+padding: 5px 78px 5px 15px;
+position: relative; margin-top:0px; border:none;}
+
+/*agent-login*/
+.agent-login {
+	width: 100%;
+	text-align: right;
+}
+.agent-login-btn {
+	font-size: 12px;
+	background: #aa5e16;
+	width: 100%;
+	clear: both;
+	padding: 5px;
+	width: 102px;
+}
+
+#fancybox-wrap #fancybox-content { background:#393634; border: 0 solid #393634; }
+#availability_form_pop { padding:20px;}
+.gform_wrapper form .gform_body {  width:450px;}
+
+
+#availability_form_pop ul.gform_fields:not(.top_label) div.ginput_complex.ginput_container.gf_name_has_1, #fancybox-wrap #fancybox-content #availability_form_pop .gform_wrapper form ul.gform_fields:not(.top_label) li.gfield_html_formatted { margin-left:0px !important;}
+
+#availability_form_pop div.ginput_container_name span { padding-right:0px;}
+#availability_form_pop #gform_fields_3 li { width:100%;}
+#availability_form_pop li p br{ display:none;}
+#availability_form_pop ul.gform_fields:not(.top_label) div.ginput_complex.ginput_container.gf_name_has_1 { width:100%;}
+#availability_form_pop .gform_wrapper .gform_footer:not(.top_label) { margin-left:0px; width:20%;}
+#availability_form_pop .gform_wrapper form .gform_footer .gform_button { margin-top:0px;}
+.post-password-form  {float: right;width: 51.5%;}
+.agent-login {margin-bottom: 15px;}
+.agent-login .agent-login-btn {display: inline-block;}
+
+.popuplink { text-decoration: underline; color: #aa5e16;}
+@media (max-width:980px) {
+.agent-login { width: auto;  text-align: left;  float: left;}
+.post-password-form  {float: right;
+width: 70%;}
+.agent-login .agent-login-btn {
+    display: inline;
+}
+}
+
+.mobile-only {
+	display: none;
+}
+
+@media (max-width:767px){
+.rates-wpdatatables ul, .contact-details__title{ padding:0;}	
+.rates-wpdatatables ul{width:32%}
+.gform_wrapper form .gform_body { width:100%; box-sizing:border-box;}
+.post-password-form {
+    width: 100%;}
+    
+body #main .mobile-hide {
+    display: none !important;
+}   
+
+.mobile-only {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}   
+	
+}
+@media (max-width:420px) {
+.post-password-form p label {width: 59%;}
+.post-password-form p label input[type="password"] {width: 53%;}
+}
